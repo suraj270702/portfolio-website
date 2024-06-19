@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Skills = () => {
@@ -86,30 +87,31 @@ const Skills = () => {
       <div className="bg-[#1c1b23] grid gap-6 p-6 shadow-lg rounded-md">
         <div className="text-zinc-200 text-xl font-medium">More Projects</div>
         <div className=" grid grid-cols-1 gap-4 rounded-lg">
-          <div>
+          <Link href={"https://weather-app-surajmaurya.vercel.app/"}>
             <div className="flex flex-col px-4 py-2">
               <div className="text-sm font-medium">Weather App</div>
               <div className="text-[#4f4f52] text-xs">
                 A simple weather app built with React, using OpenWeatherMap API.
               </div>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link href={"https://nestmart.vercel.app/"}>
             <div className="flex flex-col px-4 py-2">
-              <div className="text-sm font-medium">Weather App</div>
+              <div className="text-sm font-medium">NestMart</div>
               <div className="text-[#4f4f52] text-xs">
-                A simple weather app built with React, using OpenWeatherMap API.
+                A Grocery web App Frontend built with Nextjs.
               </div>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link href={"https://bidcraft.vercel.app/"}>
             <div className="flex flex-col px-4 py-2">
-              <div className="text-sm font-medium">Weather App</div>
+              <div className="text-sm font-medium">Bidcraft</div>
               <div className="text-[#4f4f52] text-xs">
-                A simple weather app built with React, using OpenWeatherMap API.
+                A Auction web app Frontend built with Nextjs,.
               </div>
             </div>
-          </div>
+          </Link>
+          
         </div>
       </div>
     </div>
